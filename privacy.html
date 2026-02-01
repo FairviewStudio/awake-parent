@@ -3,237 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Yappie</title>
-    <!-- Tailwind CSS -->
+    <title>Privacy Policy | Awake Parent</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#FF6B6B',
-                        secondary: '#4ECDC4',
-                        accent: '#FFD166',
-                        light: '#F7FFF7',
-                        dark: '#2F2F2F',
-                        gradient1: '#E0F7FA',
-                        gradient2: '#F8BBD0',
-                        gradient3: '#E1BEE7'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                        display: ['Poppins', 'sans-serif']
-                    }
-                }
-            }
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage-green: #9CAF88;
+            --dark-sage: #2F3E33;
+            --warm-white: #F8F7F2;
+            --soft-gold: #E0C097;
         }
-    </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
-            .transition-all-300 {
-                transition: all 300ms ease-in-out;
-            }
-        }
-        
-        body {
-            scroll-behavior: smooth;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--warm-white); color: var(--dark-sage); scroll-behavior: smooth; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .bg-sage { background-color: var(--sage-green); }
+        .text-sage { color: var(--sage-green); }
+        .bg-dark-sage { background-color: var(--dark-sage); }
+        .bg-warm-white { background-color: var(--warm-white); }
     </style>
 </head>
-<body class="bg-light font-sans text-dark">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white bg-opacity-95 backdrop-blur-sm z-50 shadow-sm">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <a href="index.html" class="text-2xl font-bold text-primary">Yappie</a>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html#features" class="text-dark hover:text-primary transition-all-300">Features</a>
-                <a href="index.html#privacy" class="text-dark hover:text-primary transition-all-300">Privacy</a>
-                <a href="index.html#faq" class="text-dark hover:text-primary transition-all-300">FAQ</a>
-            </div>
-        </div>
-    </nav>
+<body class="antialiased text-gray-800">
 
-    <!-- Content Section -->
-    <section class="pt-32 pb-20 min-h-screen">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-primary">Our Privacy Policy</h1>
-                <p class="text-gray-500 mb-8 italic">Last Updated: 2024</p>
+    <header class="py-8 px-8">
+        <nav class="max-w-7xl mx-auto flex justify-center">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+                <span class="text-xl font-semibold tracking-tight text-dark-sage">Awake Parent</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="py-16 px-8 min-h-screen">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-sm border border-sage/10 p-8 md:p-12">
+                <h1 class="font-display text-4xl md:text-5xl text-dark-sage mb-4 italic">Privacy Policy</h1>
+                <p class="text-gray-500 mb-10 italic">Last Updated: 2024</p>
 
                 <div class="prose prose-lg max-w-none">
-                    <p class="text-gray-700 mb-6">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
                         Your privacy is important to us. To better protect your privacy we provide this notice explaining our online information practices and
                         the choices you can make about the way your information is collected and used.
                     </p>
 
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">The Information We Collect</h2>
-                    <p class="text-gray-700 mb-6">
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">The Information We Collect</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
                         Any information gathered by us is used to customize the experience for you the user, and is not shared or sold to any third parties,
                         except as expressly provided for in this Privacy Policy and our Terms of Service.
                     </p>
 
-                    <!-- Local Storage Emphasis Box -->
-                    <div class="bg-gradient-to-r from-primary/10 to-secondary/10 border-l-4 border-primary rounded-2xl p-6 mb-8 mt-8">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0">
-                                <i class="fa fa-mobile text-3xl text-primary mr-4"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-3 text-primary">100% Local Storage</h3>
-                                <p class="text-gray-700 font-semibold mb-2">
-                                    All information collected by Yappie is stored <strong>exclusively on your device</strong>. 
-                                    This includes:
-                                </p>
-                                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                                    <li>All conversations and chat history</li>
-                                    <li>Teaching data and personality customization</li>
-                                    <li>User preferences and settings</li>
-                                    <li>Any personal information you provide</li>
-                                </ul>
-                                <p class="text-gray-700 mt-4 font-semibold">
-                                    <strong>We do not upload, transmit, or store any of your data on our servers.</strong> 
-                                    Your privacy is protected because your data never leaves your device.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="bg-sage/10 border-l-4 border-sage rounded-2xl p-6 mb-10 mt-10">
+                        <h3 class="font-display text-xl font-semibold mb-3 text-dark-sage italic">100% Local Storage</h3>
+                        <p class="text-gray-600 font-medium mb-2 leading-relaxed">
+                            All information collected by Awake Parent is stored <strong>exclusively on your device</strong>.
+                            This includes:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4">
+                            <li>Journal entries and reflections</li>
+                            <li>Scenario progress and preferences</li>
+                            <li>User preferences and settings</li>
+                            <li>Any personal information you provide</li>
+                        </ul>
+                        <p class="text-gray-600 mt-4 font-medium leading-relaxed">
+                            <strong>We do not upload, transmit, or store any of your data on our servers.</strong>
+                            Your privacy is protected because your data never leaves your device.
+                        </p>
                     </div>
 
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">Our Commitment to Data Security</h2>
-                    <p class="text-gray-700 mb-6">
-                        <strong>Yappie uses local-only storage architecture.</strong> All your data, including conversations, 
-                        teaching inputs, and personal information, is stored directly on your device using secure local storage mechanisms. 
-                        This means your information never travels over the internet to our servers, providing an additional layer of security 
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">Our Commitment to Data Security</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong>Awake Parent uses local-only storage architecture.</strong> All your data, including journal entries,
+                        reflections, and personal information, is stored directly on your device using secure local storage mechanisms.
+                        This means your information never travels over the internet to our servers, providing an additional layer of security
                         and privacy protection.
                     </p>
 
-                    <p class="text-gray-700 mb-6">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
                         To prevent unauthorized access and maintain data accuracy, we use industry standard methods to safeguard and secure the information
                         stored locally on your device. We believe in protecting your information just as we would want our information protected.
-                    </p>                    
+                    </p>
 
-                    <p class="text-gray-700 mb-6">
-                        In the event that personal information is compromised as a result of a breach of security, we will promptly notify those persons 
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        In the event that personal information is compromised as a result of a breach of security, we will promptly notify those persons
                         whose personal information has been compromised as may be required by applicable law.
                     </p>
 
-                    <p class="text-gray-700 mb-6">
-                        Please note that information you enter for your user profile or in your posts may be accessed and viewed publicly and 
-                        therefore you should not post information that you consider confidential or that you do not want distributed publicly. 
-                        Although in some areas you will have the ability to edit or delete information, please note that even this information 
-                        may have been cached on servers, cut and pasted or otherwise incorporated into other posts or for other uses, 
-                        and so once information is posted you should consider that it may be publicly available perpetually, 
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Please note that information you enter for your user profile or in your posts may be accessed and viewed publicly and
+                        therefore you should not post information that you consider confidential or that you do not want distributed publicly.
+                        Although in some areas you will have the ability to edit or delete information, please note that even this information
+                        may have been cached on servers, cut and pasted or otherwise incorporated into other posts or for other uses,
+                        and so once information is posted you should consider that it may be publicly available perpetually,
                         and in different locations and/or media than your original submission.
                     </p>
 
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">Notifications</h2>
-                    <p class="text-gray-700 mb-6">
-                        It is our policy to provide notifications, whether such notifications are required by law or are for marketing or other business related purposes, 
-                        to our users via email notice, written or hard copy notice, or through conspicuous posting of such notice via our website or related apps, 
-                        as determined by us in our sole discretion. Not withstanding the foregoing, we reserve the right to determine the form and means of providing 
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">Notifications</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        It is our policy to provide notifications, whether such notifications are required by law or are for marketing or other business related purposes,
+                        to our users via email notice, written or hard copy notice, or through conspicuous posting of such notice via our website or related apps,
+                        as determined by us in our sole discretion. Not withstanding the foregoing, we reserve the right to determine the form and means of providing
                         notifications to our users.
                     </p>
 
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">Child Protection</h2>
-                    <p class="text-gray-700 mb-6">
-                        In compliance with the Children's Online Privacy Protection Act, we will purge any information we receive from people we believe to be children under 13 
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">Child Protection</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        In compliance with the Children's Online Privacy Protection Act, we will purge any information we receive from people we believe to be children under 13
                         from our database and cancel the corresponding accounts.
                     </p>
 
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">Use of User Information</h2>
-                    <p class="text-gray-700 mb-6">
-                        <strong>Important:</strong> Because all data is stored locally on your device, we do not have access to your conversations, 
-                        teaching data, or personal information. Information you provide within the app is used solely by the AI learning engine 
-                        to improve your personalized experience with Yappie.
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">Use of User Information</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong>Important:</strong> Because all data is stored locally on your device, we do not have access to your journal entries,
+                        reflections, or personal information. Information you provide within the app is used solely by Awake Parent
+                        to support your personalized experience.
                     </p>
-                    <p class="text-gray-700 mb-6">
-                        We do not collect, transmit, or store IP addresses, cookies, or any tracking information. 
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We do not collect, transmit, or store IP addresses, cookies, or any tracking information.
                         We do not share, sell, or provide any user data to third parties because we simply do not have access to it—it all remains on your device.
                     </p>
-                    
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">Future Account Login Features</h2>
-                    <p class="text-gray-700 mb-6">
-                        Currently, Yappie operates without requiring user accounts or login credentials. All data is stored locally on your device, 
+
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">Future Account Login Features</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Currently, Awake Parent operates without requiring user accounts or login credentials. All data is stored locally on your device,
                         and no account registration is necessary to use the app.
                     </p>
-                    <p class="text-gray-700 mb-6">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
                         However, we may introduce optional account login features in the future to provide enhanced functionality such as:
                     </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4 mb-6">
-                        <li>Cross-device synchronization of your Yappie's personality and data</li>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4 mb-6">
+                        <li>Cross-device synchronization of your preferences and data</li>
                         <li>Cloud backup and restore capabilities</li>
                         <li>Access to premium features or content</li>
                         <li>Enhanced support and customer service</li>
                     </ul>
-                    <p class="text-gray-700 mb-6">
-                        <strong>Important:</strong> If we introduce account login features in the future, they will be <strong>completely optional</strong>. 
-                        You will be able to continue using Yappie without creating an account, and all your data will continue to be stored locally on your device.
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong>Important:</strong> If we introduce account login features in the future, they will be <strong>completely optional</strong>.
+                        You will be able to continue using Awake Parent without creating an account, and all your data will continue to be stored locally on your device.
                     </p>
-                    <p class="text-gray-700 mb-6">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
                         Should you choose to create an account in the future, we will:
                     </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4 mb-6">
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 ml-4 mb-6">
                         <li>Only collect the minimum information necessary for account creation (such as email address)</li>
                         <li>Use industry-standard encryption to protect your account credentials</li>
                         <li>Provide clear options for what data, if any, you wish to sync across devices</li>
                         <li>Allow you to delete your account and all associated data at any time</li>
                         <li>Update this Privacy Policy to reflect any changes in data collection practices</li>
                     </ul>
-                    <p class="text-gray-700 mb-6">
-                        We will notify users in advance of any account login feature implementation and provide detailed information about 
-                        what data would be collected, how it would be used, and how it would be protected. Your privacy and data security 
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We will notify users in advance of any account login feature implementation and provide detailed information about
+                        what data would be collected, how it would be used, and how it would be protected. Your privacy and data security
                         will remain our top priority, regardless of whether you choose to use account features or continue with local-only storage.
                     </p>
 
-                    <h2 class="text-2xl font-bold mt-8 mb-4 text-dark">Compliance</h2>
+                    <h2 class="font-display text-2xl font-semibold mt-10 mb-4 text-dark-sage">Compliance</h2>
 
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-dark">Access to your Personal Information</h3>
-                    <p class="text-gray-700 mb-6">
-                        You have a right to access, modify, correct and request that we internally delete any Personal Information provided to or obtained by the app. 
-                        If you update, modify or correct any Personal Information, we may keep copies of your Personal Information prior to such update, 
-                        modification or correction for uses provided for in this Policy. 
-                        You may update, modify or correct your Personal Information via your account Preferences. 
-                        Alternatively, you may contact support@fvworks.com for updates, modifications and corrections to your Personal Information, 
+                    <h3 class="text-xl font-semibold mt-6 mb-3 text-dark-sage">Access to your Personal Information</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        You have a right to access, modify, correct and request that we internally delete any Personal Information provided to or obtained by the app.
+                        If you update, modify or correct any Personal Information, we may keep copies of your Personal Information prior to such update,
+                        modification or correction for uses provided for in this Policy.
+                        You may update, modify or correct your Personal Information via your account Preferences.
+                        Alternatively, you may contact us for updates, modifications and corrections to your Personal Information,
                         or to request access to your Personal Information.
                     </p>
 
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-dark">Retention Of Your Personal Information</h3>
-                    <p class="text-gray-700 mb-6">
-                        Since all your Personal Information is stored locally on your device, you have complete control over it. 
-                        You can delete your data at any time by uninstalling the app or using the app's built-in data deletion features. 
+                    <h3 class="text-xl font-semibold mt-6 mb-3 text-dark-sage">Retention Of Your Personal Information</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Since all your Personal Information is stored locally on your device, you have complete control over it.
+                        You can delete your data at any time by uninstalling the app or using the app's built-in data deletion features.
                         When you delete data from the app, it is permanently removed from your device.
                     </p>
-                    <p class="text-gray-700 mb-6">
-                        <strong>We do not store your Personal Information on our servers</strong>, so there is no need to request deletion from us. 
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <strong>We do not store your Personal Information on our servers</strong>, so there is no need to request deletion from us.
                         Your data is yours alone, stored only on your device, and you can manage it directly through the app.
                     </p>
 
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-dark">Protection of Your Personal Information</h3>
-                    <p class="text-gray-700 mb-6">
+                    <h3 class="text-xl font-semibold mt-6 mb-3 text-dark-sage">Protection of Your Personal Information</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
                         Any Personal Information that you provide to us will be protected in a commercially reasonable manner.
                     </p>
 
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-dark">Notice of Breach of Security</h3>
-                    <p class="text-gray-700 mb-6">
-                        Because all your data is stored locally on your device and never transmitted to our servers, 
-                        the risk of a data breach through our systems is eliminated. Your information is protected by your device's 
-                        built-in security features. However, we recommend that you keep your device secure with up-to-date software 
+                    <h3 class="text-xl font-semibold mt-6 mb-3 text-dark-sage">Notice of Breach of Security</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Because all your data is stored locally on your device and never transmitted to our servers,
+                        the risk of a data breach through our systems is eliminated. Your information is protected by your device's
+                        built-in security features. However, we recommend that you keep your device secure with up-to-date software
                         and appropriate security measures.
                     </p>
-                    <p class="text-gray-700 mb-6">
-                        In the unlikely event that we discover any security vulnerability in the app itself that could affect local data storage, 
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        In the unlikely event that we discover any security vulnerability in the app itself that could affect local data storage,
                         we will notify users as soon as possible and provide updates to address the issue.
                     </p>
 
-                    <div class="bg-light rounded-2xl p-6 mt-8">
-                        <h2 class="text-2xl font-bold mb-4 text-dark">How to Contact Us</h2>
-                        <p class="text-gray-700 mb-4">
-                            Should you have other questions or concerns about these privacy policies, please send us email at 
-                            <a href="mailto:fvworks@hotmail.com" class="text-primary hover:underline font-semibold">fvworks@hotmail.com</a>.
+                    <div class="bg-warm-white rounded-2xl p-6 mt-10 border border-sage/10">
+                        <h2 class="font-display text-2xl font-semibold mb-4 text-dark-sage">How to Contact Us</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Should you have other questions or concerns about these privacy policies, please contact us via
+                            <a href="https://discord.gg/78Q6fcFXHT" class="text-sage hover:underline font-medium">Support</a>.
                         </p>
                     </div>
                 </div>
@@ -241,44 +205,20 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-12">
-                <div class="flex items-center mb-6 md:mb-0">
-                    <a href="index.html" class="text-2xl font-bold">Yappie</a>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-white hover:text-primary transition-all-300">
-                        <i class="fa fa-youtube text-2xl"></i>
-                    </a>
-                </div>
+    <footer class="py-16 px-8 bg-warm-white border-t border-sage/10 text-center">
+        <div class="flex items-center justify-center gap-2 mb-8">
+            <div class="w-6 h-6 bg-sage/30 rounded flex items-center justify-center text-sage">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/></svg>
             </div>
-            <div class="border-t border-gray-700 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-                        <a href="privacy.html" class="text-gray-300 hover:text-white transition-all-300">Privacy Policy</a>
-                        <a href="terms.html" class="text-gray-300 hover:text-white transition-all-300">Terms of Service</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition-all-300">Support</a>
-                    </div>
-                    <p class="text-gray-400">© 2026 Yappie AI. All rights reserved.</p>
-                </div>
-            </div>
+            <span class="font-semibold tracking-tight text-dark-sage">Awake Parent</span>
         </div>
+        <div class="flex justify-center flex-wrap gap-8 mb-8 text-xs font-medium text-gray-400 uppercase tracking-widest">
+            <a href="privacy.html" class="hover:text-sage transition">Privacy</a>
+            <a href="terms.html" class="hover:text-sage transition">Terms</a>
+            <a href="https://discord.gg/78Q6fcFXHT" class="hover:text-sage transition">Support</a>
+        </div>
+        <p class="text-[10px] text-gray-300 tracking-widest uppercase">© 2026 Awake Parent. Locally Encrypted • No Ads</p>
     </footer>
 
-    <script>
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-md');
-                nav.classList.remove('shadow-sm');
-            } else {
-                nav.classList.remove('shadow-md');
-                nav.classList.add('shadow-sm');
-            }
-        });
-    </script>
 </body>
 </html>
